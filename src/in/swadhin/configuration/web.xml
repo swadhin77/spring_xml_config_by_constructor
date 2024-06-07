@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean class="in.student.address" id="add">
+<constructor-arg value="222"></constructor-arg>
+<constructor-arg value="ctc"></constructor-arg>
+<constructor-arg value="123321"></constructor-arg>
+</bean>
+<bean class="in.student.college_details" id="cdd">
+<constructor-arg value="dillip"></constructor-arg>
+<constructor-arg value="102"></constructor-arg>
+<constructor-arg ref="add"></constructor-arg>
+</bean>
+
+</beans>
